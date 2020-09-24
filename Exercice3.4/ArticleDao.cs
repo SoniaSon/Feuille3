@@ -20,10 +20,9 @@ namespace Exercice3._4
             }
 
             public Article GetArticles()
-        {
+            {
                 return ListeArticles
-                    .FirstOrDefault(art => art.nomArticle.Equals(nomArticle));
+                            .FirstOrDefault(art => art.nomArticle.Equals(nomArticle));
             }
-
-        }
+    }
 }

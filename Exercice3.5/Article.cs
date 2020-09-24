@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Exercice3._4
+namespace Exercice3._5
 {
     class Article
     {
@@ -32,7 +32,7 @@ namespace Exercice3._4
         {
             quantiteArticle++;
             Console.WriteLine("[Ajouter un article]");
-            Console.WriteLine("Vous avez ajouté un article, donc il y'a " + quantiteArticle + "Article" );
+            Console.WriteLine("Vous avez ajouté un article, donc il y'a " + quantiteArticle + "Article");
         }
 
 
@@ -48,6 +48,5 @@ namespace Exercice3._4
             }
 
         }
-
     }
 }
