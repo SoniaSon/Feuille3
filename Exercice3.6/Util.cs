@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Exercice3._6
 {
-    class Util
+    static class Util
     {
-        internal static List<Article> GetArticles()
+        public static List<Article> GetArticles()
         {
             List<Article> Art = new List<Article>()
             {

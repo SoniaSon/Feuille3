@@ -19,10 +19,10 @@ namespace Exercice3._4
                 ListeArticles = listeArticles;
             }
 
-            public Article GetArticles()
+            public Article GetArticles(string nomArticle)
             {
                 return ListeArticles
-                            .FirstOrDefault(art => art.nomArticle.Equals(nomArticle));
+                            .FirstOrDefault(art => art.NomArticle.Equals(nomArticle));
             }
     }
 }

@@ -22,23 +22,24 @@ namespace Exercice3._6
         public Article GetArticles(string nomArticle)
         {
             return ListeArticles
-                    .FirstOrDefault(art => art.nomArticle.Equals(nomArticle));
+                        .FirstOrDefault(art => art.NomArticle.Equals(nomArticle));
         }
+
         public (string, double) GetArticleEtPrix(string nomArticle)
         {
             var res = ListeArticles
-                .Where(art => art.nomArticle.Equals(nomArticle))
-                .Select(art => new { art.nomArticle, art.prixArticle })
+                .Where(art => art.NomArticle.Equals(nomArticle))
+                .Select(art => new { art.NomArticle, art.PrixArticle })
                 .FirstOrDefault();
             if (res != null)
-                return (res.nomArticle, res.prixArticle);
+                return (res.NomArticle, res.PrixArticle);
             return ("Article non trouvé", 0);
         }
         public Tuple<string, double> GetArticleEtPrixTuple(string nomArticle)
         {
             var res = ListeArticles
-                .Where(art => art.nomArticle.Equals(nomArticle))
-                .Select(art => new Tuple<string, double>(art.nomArticle, art.prixArticle))
+                .Where(art => art.NomArticle.Equals(nomArticle))
+                .Select(art => new Tuple<string, double>(art.NomArticle, art.PrixArticle))
                 .FirstOrDefault();
             return res;
         }

@@ -8,7 +8,7 @@ namespace Exercice3._7
         static void Main(string[] args)
         {
             IArticleDao dao = new ArticleDao();
-            IEnumerable<Article> res = dao.GetArticleMinMax(11, 14);
+            IEnumerable<Article> res = dao.GetArticleMinMax(60, 100);
             foreach (var article in res)
             {
                 article.Afficher();
